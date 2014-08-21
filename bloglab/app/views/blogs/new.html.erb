@@ -1,0 +1,11 @@
+<form action="/blogs" method="post">
+  Author:<br>
+  <input type="text" name="blog[author]" autofocus><br>
+  Title: <br>
+  <input type="text" name="blog[title]"><br>
+  Emotions: <br>
+   <textarea name="blog[description]"></textarea><br>
+  <%= token_tag form_authenticity_token %>
+
+  <button> Submit Post </button>
+</form>
